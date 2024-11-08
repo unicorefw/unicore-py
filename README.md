@@ -1,10 +1,6 @@
-Unicore-py is a Python-based framework using UnicoreFW's Principles
-===================================================================
-
-
-# Unicore Framework
+# Unicore-py - Unicore Framework in Python
 * * *
-Bringing UnderscoreJS UX to other languages in a unified way. Our goal is to create a secure and performant framework or toolbelt that can be used across multiple programming languages without sacrificing security or performance. To achieve this, I suggest the following approach:
+Bringing UnderscoreJS UX to other languages in a unified way. Our goal is to create a secure and performant framework or toolbelt that can be used across multiple programming languages without sacrificing security or performance. UnicoreF-PY is a Python-based framework based on UnderscoreJS, designed to offer a comprehensive set of utilities and functional programming tools. This framework is equipped with command-line capabilities that allow users to execute example scripts, parse custom command-line arguments, and integrate powerful utility methods for various use cases. The goal of UnicoreFW is to provide security, performance, and ease of use for developers looking to build and maintain Python applications.
 
 Installation
 ------------
@@ -19,7 +15,31 @@ Installation
 3.  Install any required dependencies (if applicable):
     
         pip install -r requirements.txt
-    
+
+
+
+Directory Structure
+-------------------
+
+    project_root_dir/
+    ├── src/
+    │   └── unicore.py
+    ├── examples/
+    │   └── test.py
+    └── README.md
+
+Usage
+-----
+
+### Running the Command-Line Utility
+
+The primary entry point for using UnicoreFW is through `test.py`, which provides command-line functionality.
+
+Navigate to the project root and run:
+
+    python utils/unicore-cli.py --show=examples <method>
+
+
 **Categorize Functions:**
 - `Array Functions`: Operations on arrays and collections.
 - `Object Functions`: Manipulations and utilities for objects.
@@ -263,8 +283,6 @@ UnicoreFW-PY is a Python-based framework based on UnderscoreJS, designed to offe
 
 Features
 --------
-
-*   **Command-line Parsing**: Parse command-line arguments with `--name=value` syntax and support additional positional arguments.
     
 *   **Flexible Test Execution**: Run example scripts through the command line for rapid prototyping and testing.
     
@@ -272,60 +290,3 @@ Features
     
 *   **Secure Execution**: Built-in security measures to safely execute code and handle user inputs.
     
-
-
-    
-
-Directory Structure
--------------------
-
-    project_root_dir/
-    ├── src/
-    │   └── unicore.py
-    ├── examples/
-    │   └── test.py
-    └── README.md
-
-Usage
------
-
-### Running the Command-Line Utility
-
-The primary entry point for using UnicoreFW is through `test.py`, which provides command-line functionality.
-
-Navigate to the project root and run:
-
-    python examples/test.py --test=examples <method>
-
-**Example Command**:
-
-    python examples/test.py --test=examples example1
-
-This command will execute `ex_example1.py` from the `examples/` directory.
-
-### Parsing Command-Line Arguments
-
-UnicoreFW includes a command-line argument parser that supports `--name=value` format with additional positional arguments.
-
-**Example Usage**:
-
-    python examples/test.py --name=John --verbose=true extra_arg1 extra_arg2
-
-**Expected Output**:
-
-    Parsed key-value pairs: {'name': 'John', 'verbose': 'true'}
-    Positional arguments: ['extra_arg1', 'extra_arg2']
-
-Example Code
-------------
-
-Here is a sample implementation using UnicoreFW's command-line parsing:
-
-    # examples/test.py
-    import sys
-    import os
-    sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
-    from unicore import unicore
-    
-    # Run example functions
-    unicore.some_function("Hello, World!")
