@@ -1,10 +1,10 @@
-Unicore Command-Line Utilities (UnicoreFW)
+UnicoreFW-PY is a Python-based framework 
 ==========================================
 
 Overview
 --------
 
-UnicoreFW is a Python-based framework designed to offer a comprehensive set of utilities and functional programming tools. This framework is equipped with command-line capabilities that allow users to execute example scripts, parse custom command-line arguments, and integrate powerful utility methods for various use cases. The goal of UnicoreFW is to provide security, performance, and ease of use for developers looking to build and maintain Python applications.
+UnicoreFW-PY is a Python-based framework designed to offer a comprehensive set of utilities and functional programming tools. This framework is equipped with command-line capabilities that allow users to execute example scripts, parse custom command-line arguments, and integrate powerful utility methods for various use cases. The goal of UnicoreFW is to provide security, performance, and ease of use for developers looking to build and maintain Python applications.
 
 Features
 --------
@@ -23,8 +23,8 @@ Installation
 
 1.  Clone the repository:
     
-        git clone https://github.com/yourusername/unicore-fw.git
-        cd unicore-fw
+        git clone https://github.com/unicorefw/unicore-py.git
+        cd unicore-py
     
 2.  Ensure Python 3.x is installed on your system.
     
@@ -41,8 +41,6 @@ Directory Structure
     │   └── unicore.py
     ├── examples/
     │   └── test.py
-    │   └── ex_example1.py
-    │   └── ex_example2.py
     └── README.md
 
 Usage
